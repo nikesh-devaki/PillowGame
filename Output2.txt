@@ -1,0 +1,28 @@
+Enter number of people
+11
+Enter duration of song
+4
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+4th person lost the game
+new positions 1, 2, 3, 5, 6, 7, 8, 9, 10, 11
+8th person lost the game
+new positions 1, 2, 3, 5, 6, 7, 9, 10, 11
+1th person lost the game
+new positions 2, 3, 5, 6, 7, 9, 10, 11
+6th person lost the game
+new positions 2, 3, 5, 7, 9, 10, 11
+11th person lost the game
+new positions 2, 3, 5, 7, 9, 10
+7th person lost the game
+new positions 2, 3, 5, 9, 10
+3th person lost the game
+new positions 2, 5, 9, 10
+2th person lost the game
+new positions 5, 9, 10
+5th person lost the game
+new positions 9, 10
+10th person lost the game
+new positions 9
+Winner is 9
+
+Process finished with exit code 0
