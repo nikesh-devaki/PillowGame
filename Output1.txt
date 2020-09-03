@@ -1,0 +1,16 @@
+Enter number of people
+5
+Enter duration of song
+2
+1, 2, 3, 4, 5
+2th person lost the game
+new positions 1, 3, 4, 5
+4th person lost the game
+new positions 1, 3, 5
+1th person lost the game
+new positions 3, 5
+5th person lost the game
+new positions 3
+Winner is 3
+
+Process finished with exit code 0
