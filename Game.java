@@ -25,7 +25,7 @@ public class Game {
         for(int i=1;i<=n;i++){
             people.add(i);
         }
-        System.out.println(getPositions(people));
+        printPositions(people);
         return findNextPersonAfterElimination(people,-1,d);
     }
 
@@ -37,7 +37,7 @@ public class Game {
         //Eliminate member from the position
         int removedNumber=people.remove(currIndex);
         System.out.println(removedNumber +"th person lost the game");
-        System.out.println("new positions "+getPositions(people));
+        printPositions(people);
         //return pillow to previous person
         currIndex--;
         //Note: Can cause stackoverflow for large number with this recursive approach.
@@ -48,8 +48,6 @@ public class Game {
     public static int findNextPerson(List<Integer> people, int currIndex, int stepsAway){
         int nextIndex;
         nextIndex=((currIndex+stepsAway)%people.size());
-        //Scenario where first person in the line was eliminated
-        currIndex=(currIndex<0)?currIndex-1:currIndex;
         return nextIndex;
     }
 
@@ -58,6 +56,10 @@ public class Game {
         String positions = people.stream().map(Object::toString)
                 .collect(Collectors.joining(", "));
         return  positions;
+    }
+
+    public static void printPositions(List<Integer> people){
+        System.out.println("Positions "+getPositions(people));
     }
 
 }
